@@ -9,11 +9,25 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe
 x-kinRank: "10"
 x-alexaRank: "1914"
 tags: Reject
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/reject/master/_listings/stripe/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Stripe - Add Accounts Account Reject
+  x-api-slug: accountsaccountreject-post
+  description: With Connect, you may flag accounts as suspicious.Test-mode Custom
+    and Express accounts can be rejected at any time. Accounts created using live-mode
+    keys may only be rejected once all balances are zero.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/254-stripe.jpg
+  humanURL: https://stripe.com/
+  baseURL: https://api.stripe.com/v1/
+  tags: Billing, Finance, Payments, Payments, Stripe Stack, Imports, Change Log Example,
+    Stack Network, Stack, SaaS, Invoices, Payments, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/reject/master/_listings/stripe/accountsaccountreject-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://stride.api.gallery.streamdata.io

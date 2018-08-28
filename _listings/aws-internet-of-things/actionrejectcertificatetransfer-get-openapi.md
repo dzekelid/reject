@@ -1,11 +1,11 @@
 ---
 swagger: "2.0"
-x-collection-name: AWS Service Catalog
+x-collection-name: AWS Internet of Things
 x-complete: 0
 info:
-  title: AWS Service Catalog API Reject Portfolio Share
+  title: AWS Internet of Things API Reject Certificate Transfer
   version: 1.0.0
-  description: Rejects an offer to share a portfolio.
+  description: Rejects a pending certificate transfer.
 schemes:
 - http
 produces:
@@ -13,26 +13,26 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=RejectPortfolioShare:
+  /?Action=RejectCertificateTransfer:
     get:
-      summary: Reject Portfolio Share
-      description: Rejects an offer to share a portfolio.
-      operationId: rejectPortfolioShare
-      x-api-path-slug: actionrejectportfolioshare-get
+      summary: Reject Certificate Transfer
+      description: Rejects a pending certificate transfer.
+      operationId: rejectCertificateTransfer
+      x-api-path-slug: actionrejectcertificatetransfer-get
       parameters:
       - in: query
-        name: AcceptLanguage
-        description: The language code to use for this operation
+        name: certificateId
+        description: The ID of the certificate
         type: string
       - in: query
-        name: PortfolioId
-        description: The portfolio identifier
+        name: rejectReason
+        description: The reason the certificate transfer was rejected
         type: string
       responses:
         200:
           description: OK
       tags:
-      - Portfolios
+      - Certificate Transfers
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

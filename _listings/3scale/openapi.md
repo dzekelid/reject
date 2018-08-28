@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: 3scale
 x-complete: 1
@@ -18,4 +17,23 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /admin/api/accounts/{id}/reject.xml:
+    put:
+      summary: Account Reject
+      description: Account reject.
+      operationId: account
+      x-api-path-slug: adminapiaccountsidreject-xml-put
+      parameters:
+      - in: path
+        name: id
+        description: id of the account
+      - in: query
+        name: provider_key
+        description: Your api key with 3scale (also known as provider key)
+      responses:
+        200:
+          description: OK
+      tags:
+      - Account
+      - Reject

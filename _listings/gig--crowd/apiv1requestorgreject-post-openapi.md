@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: GIG & CROWD
-x-complete: 1
+x-complete: 0
 info:
-  title: GIG & Crowd
+  title: GIGANDCROWD Post Request Org Reject
   version: 1.0.0
+  description: Post request org reject.
 host: gigandcrowd.com
 basePath: /
 schemes:
@@ -97,68 +99,17 @@ paths:
       - Request
       - Org
       - Reject
-  /api/v1/request/art/reject:
-    post:
-      summary: Post Request Art Reject
-      description: Post request art reject.
-      operationId: postApiV1RequestArtReject
-      x-api-path-slug: apiv1requestartreject-post
-      parameters:
-      - in: header
-        name: Authorization
-      - in: body
-        name: request
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Request
-      - Art
-      - Reject
-  /api/v1/request/art/reject/performanceDate:
-    post:
-      summary: Post Request Art Reject Performancedate
-      description: Post request art reject performancedate.
-      operationId: postApiV1RequestArtRejectPerformancedate
-      x-api-path-slug: apiv1requestartrejectperformancedate-post
-      parameters:
-      - in: header
-        name: Authorization
-      - in: body
-        name: request
-        description: /
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Request
-      - Art
-      - Reject
-      - Performancedate
-  /api/v1/request/{requestId}/condition/{condition}/reject:
-    post:
-      summary: Post Request Requestid Condition Condition Reject
-      description: Post request requestid condition condition reject.
-      operationId: postApiV1RequestRequestConditionConditionReject
-      x-api-path-slug: apiv1requestrequestidconditionconditionreject-post
-      parameters:
-      - in: header
-        name: Authorization
-      - in: path
-        name: condition
-      - in: path
-        name: requestId
-        description: /
-      responses:
-        200:
-          description: OK
-      tags:
-      - Request
-      - Requestid
-      - Condition
-      - Condition
-      - Reject
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
